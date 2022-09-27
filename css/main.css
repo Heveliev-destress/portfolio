@@ -1,0 +1,77 @@
+:root {
+  --primary-background-color:#000000;
+  --header-logo-icon-color:#FFFFFF;
+  --menu-open-icon-color:#C4C4C4;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+body {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--primary-background-color);
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 360px) {
+  .container {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.header__logo_icon {
+  width: 78.43px;
+  height: 24px;
+  fill: var(--header-logo-icon-color);
+}
+
+.mobile-menu_open__icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--menu-open-icon-color);
+}/*# sourceMappingURL=main.css.map */
