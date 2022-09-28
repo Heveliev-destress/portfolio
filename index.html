@@ -4,48 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Robin.W</title>
 </head>
 <body>
     <header class="header">
-        <div class="container">
-        <a href="/index.html">
+        <div class="container header_flex">
+            <nav class="navigation">
+            <a class="logo" href="index.html">
             <svg class="header__logo_icon" aria-label="icon logotipe"  width="78.43" height="24">
                 <use href="./img/sprite.svg#icon-logo-header"></use>
-            </svg> </a>
-        <button type="button" class=" js-open-menu" >
-                <svg class="mobile-menu_open__icon" width="24" height="24">
-                    <use href="./images/sprite1.svg#icon-burger"></use>
-                </svg>
-            </button>
-                <ul>
-                    <li><a href="">Experience</a></li>
-                    <li><a href="">Work</a></li>
-                    <li><a href="">Photography</a></li>
-                    <li><a href="">Contact</a></li>
+            </svg></a>
+                <ul class="menu">
+                    <li><a class="menu__link" href="">Experience</a></li>
+                    <li><a class="menu__link" href="">Work</a></li>
+                    <li><a class="menu__link" href="">Photography</a></li>
+                    <li><a class="menu__link" href="">Contact</a></li>
                 </ul>
             </nav>
-            <!-- <div class="mobile-menu js-menu-container" >
+            <button type="button" class="mobile-menu__open_btn js-open-menu">
+                <svg class="mobile-menu_open__icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu js-menu-container" >
             <div class="container mobile-menu__container">
-                 <button type="button" class="mobile-menu_close js-close-menu" >
-                     <svg class="mobile-menu_close__icon">
-                    <use href="./images/sprite1.svg#icon-x"></use>
+                 <button type="button" class="mobile-menu__close_btn js-close-menu" >
+                     <svg class="mobile-menu_close__icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-x"></use>
                     </svg>
             </button>
-            <ul class="mobile-menu__navigation list">
+            <ul class="mobile-menu__navigation ">
                     <li class="mobile-menu__navigation_item">
-                        <a class="link mobile-menu__link mobile-menu__link_current" href="#">Experience</a></li>
+                        <a class=" mobile-menu__link " href="#">Experience</a></li>
                     <li class="mobile-menu__navigation_item">
-                        <a class="link mobile-menu__link" href="#">Work</a></li>
-                    <li ><a class="link mobile-menu__link" href="#">Photography</a></li>
-                    <li ><a class="link mobile-menu__link" href="#">Contact</a></li>
+                        <a class="mobile-menu__link" href="#">Work</a></li>
+                    <li  class="mobile-menu__navigation_item">
+                        <a class="mobile-menu__link" href="#">Photography</a></li>
+                    <li class="mobile-menu__navigation_item">
+                        <a class=" mobile-menu__link" href="#">Contact</a></li>
                     </ul>
-        </div> -->
+        </div>
     </div>
     </header>
     <main>
         <section class="hero">
+            <picture>
+                <source
+                srcset="./img/mobile/hero/img1.webp 1x, ./img/mobile/hero/img1.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/mobile/hero/img1.jpg 1x, ./img/mobile/hero/img1@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+      
+              <source
+                srcset="./img/mobile/hero/img1.webp 1x, ./img/mobile/hero/img1@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/mobile/hero/img1.jpg 1x, ./img/mobile/hero/img1@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+      
+              <!-- <source
+                srcset="./img/mobile/hero/img1.webp 1x, ./img/mobile/hero/img1.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp"
+              /> -->
+              <source
+                srcset="./img/mobile/hero/img1.jpg 1x, ./img/mobile/hero/img1@2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+      
+                <img class="hero__img" src="./img/mobile/hero/img1.jpg" alt="Robin Williams photo" >
+            </picture>
             <h1>I’m Robin Williams. A Product Designer <span>based in Italy.</span></h1>
             <p>I’m probably the most passionate designer you will ever get to work with. If you have
              a great project that needs some amazing skills, I’m your guy.</p>
@@ -335,6 +375,7 @@
         </ul>
         <p>Not Copyright 2020 • Robin Williams. Webflow cloneable</p>
     </footer>
-    
+
+<script src="./js/menu.js"></script>
 </body>
 </html>
