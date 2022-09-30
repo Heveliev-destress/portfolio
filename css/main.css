@@ -394,4 +394,7 @@ body {
     max-width: 370px;
     flex-basis: calc((100% - 24px) / 3);
   }
+}
+.values__title {
+  color: tomato;
 }/*# sourceMappingURL=main.css.map */
