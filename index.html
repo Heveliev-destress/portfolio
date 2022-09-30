@@ -53,47 +53,47 @@
     </header>
     <main>
         <section class="hero">
+            <div class="container">
             <picture>
                 <source
-                srcset="./img/mobile/hero/img1.webp 1x, ./img/mobile/hero/img1.webp 2x"
+                srcset="./img/desktop/hero/img1.webp 1x, ./img/desktop/hero/img1@2x.webp 2x"
                 media="(min-width: 1200px)"
                 type="image/webp"
               />
               <source
-                srcset="./img/mobile/hero/img1.jpg 1x, ./img/mobile/hero/img1@2x.jpg 2x"
+                srcset="./img/desktop/hero/img1.jpg 1x, ./img/desktop/hero/img1@2x.jpg 2x"
                 media="(min-width: 1200px)"
               />
-      
+              <source
+                srcset="./img/tablet/hero/img1.webp 1x, ./img/tablet/hero/img1@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./img/tablet/hero/img1.jpg 1x, ./img/tablet/hero/img1@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
               <source
                 srcset="./img/mobile/hero/img1.webp 1x, ./img/mobile/hero/img1@2x.webp 2x"
-                media="(min-width: 768px)"
+                media="(max-width: 767px)"
                 type="image/webp"
               />
               <source
                 srcset="./img/mobile/hero/img1.jpg 1x, ./img/mobile/hero/img1@2x.jpg 2x"
-                media="(min-width: 768px)"
-              />
-      
-              <!-- <source
-                srcset="./img/mobile/hero/img1.webp 1x, ./img/mobile/hero/img1.webp 2x"
-                media="(max-width: 767px)"
-                type="image/webp"
-              /> -->
-              <source
-                srcset="./img/mobile/hero/img1.jpg 1x, ./img/mobile/hero/img1@2x.jpg 2x"
                 media="(max-width: 767px)"
               />
-      
-                <img class="hero__img" src="./img/mobile/hero/img1.jpg" alt="Robin Williams photo" >
+            <img class="hero__img" src="./img/mobile/hero/img1.jpg"   alt="Robin Williams photo" >
             </picture>
-            <h1>I’m Robin Williams. A Product Designer <span>based in Italy.</span></h1>
-            <p>I’m probably the most passionate designer you will ever get to work with. If you have
-             a great project that needs some amazing skills, I’m your guy.</p>
+            <div class="hero__info">
+            <h1 class="hero__title">I&#39m Robin Williams. A Product Designer <span class="hero__title_second">based in Italy.</span></h1>
+            <p class="hero__text">I&#39m probably the most passionate designer you will ever get to work with.
+                 If you have a great project that needs some amazing skills, I&#39m your guy.</p>
+            </div>
+        </div>
         </section>
         <section class="experience">
             <p>work experience</p>
-            <h2>Companies I have worked
-                for in the past</h2>
+            <h2>Companies I have worked for in the past</h2>
                 <ul>
                     <li>
                         <p>01</p>

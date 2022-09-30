@@ -40,9 +40,8 @@
 .mobile-menu__link{
     font-weight: 400;
     font-size: 40px;
-    line-height: 47px;
+    line-height: 1.18;
     color:var(--primary--text-light-color);
-    letter-spacing: 0.02em;
 }
 .mobile-menu__navigation_item:not(:last-of-type){
     margin-bottom: 20px;
