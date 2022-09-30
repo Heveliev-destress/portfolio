@@ -4,11 +4,11 @@
 }
 @media screen and (min-width: 768px) {
 .section{
-    padding: 80px 40px;
+    padding: 80px 20px;
 }
 }
-// @media screen and (min-width: 1200px) {
-//     .container{
-//         width: 1200px;
-//     }
-// }
+@media screen and (min-width: 1200px) {
+    .section{
+        padding: 120px 52px;
+    }
+}
