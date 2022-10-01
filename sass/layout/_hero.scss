@@ -1,4 +1,5 @@
 .hero{
+    width: 280px;
     border-bottom: 1px dashed var(--hero-border-color);
     padding-top:132px ;
     padding-bottom: 132px;
@@ -10,10 +11,8 @@
     margin-right: auto;
 }
 .hero__info{
-    padding-top:48px ;
-    padding-bottom: 48px;
+    padding:48px 20px ;}
 
-}
 .hero__title{
     margin-bottom: 16px;
     font-weight: 700;
@@ -35,6 +34,9 @@ color:var(--primary--text-light-color);
 
 
 @media screen and (min-width:360px) {
+    .hero{
+        width: 360px;
+    }
     .hero__img{
         width:360px;
         height: 288px;
@@ -47,6 +49,7 @@ color:var(--primary--text-light-color);
 }
 @media screen and (min-width: 768px) {
     .hero{
+        width: 768px;
         padding-right: 40px;
         border-bottom:none;
         padding-top: 80px;
@@ -79,6 +82,7 @@ color:var(--primary--text-light-color);
 }
 @media screen and (min-width: 1200px) {
     .hero{
+        width: 1200px;
         border-bottom:1px dashed var(--hero-border-color);
         height: 810px;
     }

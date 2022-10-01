@@ -68,7 +68,18 @@ padding-bottom: 24px;
 }
 }
 @media screen and (min-width:1200px){
+    .navigation::after{
+       content:"";
+       width: 70%;
+       height: 902px;
+       background-color: #181823;
+       position: absolute;
+       top: 0;
+       right: -30px;
+       z-index: -10;
+    }
     .header{
         width: 1200px;
+        position: relative;
         }
 }
