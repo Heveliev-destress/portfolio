@@ -653,4 +653,11 @@ body {
   .client__item {
     max-width: 200px;
   }
+}
+.projects__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--primary--text-light-color);
+  margin-bottom: 80px;
 }/*# sourceMappingURL=main.css.map */
