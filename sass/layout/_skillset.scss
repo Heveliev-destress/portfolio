@@ -1,0 +1,73 @@
+.skillset__title{
+    font-weight: 700;
+font-size: 32px;
+line-height: 1.19;
+color:var(--primary--text-light-color);
+margin-bottom: 16px;
+}
+.skillset__text{
+    font-weight: 400;
+font-size: 18px;
+line-height: 1.5;
+color:var(--page-text-color);
+}
+.skillset__main-info{
+    margin-bottom: 70px;
+}
+.skillset__item:not(:last-of-type){
+    margin-bottom: 28px;
+}
+.skillset__icon{
+    fill: var(--skillset-icon-color);
+    margin-bottom: 24px;
+}
+.skillset__item-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    color:var(--primary--text-light-color);
+    margin-bottom: 12px;
+}
+.skillset__item-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color:var(--page-text-color);
+}
+@media screen and (min-width: 768px) {
+    .skillset__title{
+        font-size: 55px;
+        line-height: 1.2;
+    margin-bottom: 24px;
+    }
+    .skillset__main-info{
+        margin-bottom: 48px;
+    }
+    .skillset__list{
+        display: flex;
+        column-gap: 24px;
+        row-gap: 48px;
+        flex-wrap: wrap;
+    }
+    .skillset__item{
+        max-width: 332px;
+        flex-basis: calc((100% - 24px) / 2);
+    }
+    .skillset__item:not(:last-of-type){
+        margin-bottom:0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .skillset__box-aling{
+        display: flex;
+        column-gap: 24px;
+    }
+    .skillset__main-info{
+    max-width: 370px;
+
+    }
+    .skillset__item{
+        max-width: 370px;
+        flex-basis: calc((100% - 24px) / 2);
+    }
+}
