@@ -1,10 +1,107 @@
 .projects__title{
     font-weight: 700;
     font-size: 32px;
-    line-height: 38px;
+    line-height: 1.19;
     color: var(--primary--text-light-color);
     margin-bottom: 80px;
 }
-// .projects__item{
+.projects__box:not(:last-of-type){
+    margin-bottom: 48px;
 
-// }
+}
+.projects__img{
+    width: 280px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.projects__item{
+    max-width: 280px;
+    &:not(:last-of-type){
+        margin-bottom: 48px;
+    }
+}
+.projects__card-info{
+    padding: 40px 32px;
+    background-color: var(--projects-card-info-bcg-color);
+
+}
+.projects__card-title{
+    font-weight: 700;
+font-size: 24px;
+line-height: 1.5;
+color: var(--primary--text-light-color);
+margin-bottom: 13px;
+}
+.projects__card-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--page-text-color);
+}
+.projects__link{
+display: none;
+}
+@media screen and (min-width: 360px) {
+    .projects__img{
+        width: 320px;
+        height: 400px;
+    }
+    .projects__item{
+        max-width: 320px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .projects__title{
+        font-size: 55px;
+        line-height: 1.2;
+    }
+    .projects__img{
+        width: 688px;
+        height: 620px;
+    }
+    .projects__item{
+        max-width: 688px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .projects__title{
+   width: 565px;
+    }
+    .projects__box:not(:last-of-type){
+        margin-bottom: 0;
+    
+    }
+    .projects__align{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px; 
+    }
+
+    .projects__img{
+        width: 565px;
+    }
+    .projects__item{
+        max-width: 565px;
+    }
+    .projects__link{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color:var(--primary--text-light-color);
+    padding: 24px 32px;
+    border:1px solid var(--accent-color) ;
+margin-left: auto;
+margin-right: auto;
+    }
+
+    .project__right-side{
+        row-gap: 91px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
