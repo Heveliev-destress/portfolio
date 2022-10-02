@@ -21,6 +21,7 @@
   --client-icon-color:#8491A0;
   --client-link-border-color:#181823;
   --projects-card-info-bcg-color:#181823;
+  --instagram-bcg-color:#FFF3E4;
 }
 
 h1,
@@ -764,4 +765,14 @@ body {
     justify-content: center;
     align-items: center;
   }
+}
+.instagram {
+  background-color: var(--instagram-bcg-color);
+}
+
+.instagram__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.19;
+  color: var(--primary-text-dark-color);
 }/*# sourceMappingURL=main.css.map */
