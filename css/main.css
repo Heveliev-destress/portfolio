@@ -22,6 +22,9 @@
   --client-link-border-color:#181823;
   --projects-card-info-bcg-color:#181823;
   --instagram-bcg-color:#FFF3E4;
+  --instagram-text-color:#5B6876;
+  --instagram-link-color:#181823;
+  --link-instagram-border-color:#8491A0 ;
 }
 
 h1,
@@ -256,6 +259,8 @@ body {
   }
 }
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   width: 280px;
   border-bottom: 1px dashed var(--hero-border-color);
   padding-top: 132px;
@@ -669,7 +674,7 @@ body {
 }
 
 .projects__img {
-  width: 280px;
+  width: 240px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -775,4 +780,61 @@ body {
   font-size: 32px;
   line-height: 1.19;
   color: var(--primary-text-dark-color);
+  margin-bottom: 16px;
+}
+
+.instagram__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--instagram-text-color);
+  margin-bottom: 125px;
+}
+
+.instagram__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--instagram-link-color);
+  border-bottom: 1px solid var(--link-instagram-border-color);
+}
+
+.instagram__img {
+  width: 280px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 360px) {
+  .instagram__img {
+    width: 360px;
+    height: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .instagram__title {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+  .instagram__text {
+    width: 304px;
+    margin-bottom: 133px;
+  }
+  .instagram__align {
+    display: flex;
+  }
+  .instagram__img {
+    width: 384px;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .instagram__text {
+    width: 576px;
+  }
+  .instagram__img {
+    width: 720px;
+  }
 }/*# sourceMappingURL=main.css.map */
