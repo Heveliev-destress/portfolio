@@ -1,0 +1,24 @@
+.review__info{
+    margin-bottom: 64px;
+}
+.review__title{
+    font-weight: 700;
+font-size: 32px;
+line-height: 1.19;
+color: var(--primary--text-light-color);
+margin-bottom: 16px;
+}
+.review__text{
+    font-weight: 400;
+font-size: 18px;
+line-height: 1.5;
+color: var(--page-text-color);
+margin-bottom: 40px;
+}
+.review__link{
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: var(--primary--text-light-color);
+border-bottom: 1px solid var(--link-review-border-color);
+}
