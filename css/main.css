@@ -1041,4 +1041,22 @@ body {
   .review__card-down {
     padding: 64px;
   }
+}
+.photography__info {
+  margin-bottom: 40px;
+}
+
+.photography__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.19;
+  color: var(--primary--text-light-color);
+  margin-bottom: 24px;
+}
+
+.photography__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--page-text-color);
 }/*# sourceMappingURL=main.css.map */
