@@ -149,7 +149,7 @@ body {
     right: 20px;
   }
   .mobile-menu__close_btn {
-    fill: var(--header-logo-icon-color);
+    fill: var(--logo-icon-color);
   }
   .mobile-menu__link {
     font-weight: 400;
@@ -196,7 +196,7 @@ body {
   .mobile-menu_open__icon {
     width: 24px;
     height: 24px;
-    fill: var(--header-logo-icon-color);
+    fill: var(--logo-icon-color);
   }
 }
 .header {
