@@ -39,6 +39,8 @@ transition: background-color  var(--transition-duration-and-timing-function);
 .photography__img{
     width: 240px;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 @media screen and (min-width: 360px) {
     .photography__item-btn{
