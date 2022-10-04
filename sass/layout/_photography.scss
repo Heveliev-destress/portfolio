@@ -13,3 +13,102 @@ font-size: 18px;
 line-height: 1.5;
 color:var(--page-text-color) ;
 }
+.photography__list-btn{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.photography__btn{
+    font-weight: 700;
+font-size: 18px;
+line-height: 1.5;
+color: var(--primary--text-light-color);
+width: 120px;
+background-color: transparent;
+border: 1px solid var(--accent-color);
+transition: background-color  var(--transition-duration-and-timing-function);
+&:hover,
+&:focus{
+    background-color: var(--accent-color);
+}
+}
+.photography__img-item:not(:last-of-type){
+    margin-bottom: 24px;
+
+}
+.photography__img{
+    width: 240px;
+    height: auto;
+}
+@media screen and (min-width: 360px) {
+    .photography__item-btn{
+        max-width: 320px;
+        flex-basis: calc((100% - 24px) / 2);
+    }
+    .photography__list-btn{
+    gap: 24px;
+    }
+    .photography__btn
+    {width: 148px;
+    height: 51px;}
+    .photography__img{
+        width: 320px;
+        height: 420px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .photography__info{
+        margin-bottom: 64px;
+        }
+     .photography__title{
+            font-size: 55px;
+            line-height:1.2;
+        }
+        .photography__list-btn{
+            gap: 0;
+            column-gap: 24px;
+            flex-wrap: nowrap;
+        }
+        .photography__item-btn{
+            max-width: auto;
+            flex-basis: 0;
+        }
+        .photography__btn{
+        width: auto;
+        padding: 12px 16px;
+        }
+        .photography__img-item:not(:last-of-type){
+            margin-bottom: 0;
+        }
+        .photography__img-list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        .photography__img-item{
+            max-width: 332px;
+            flex-basis: calc((100% - 24px) / 2);
+
+        }    
+        .photography__img{
+            width: 332px;
+}}
+
+@media screen and (min-width: 1200px) {
+    .photography__info{
+        width: 588px;
+    }
+        .photography__img-list{
+            flex-wrap: nowrap;
+            gap: 0;
+            column-gap: 24px;
+        }
+        .photography__img-item{
+            max-width: auto;
+            flex-basis: 0;
+
+        }  
+        .photography__img{
+            width: 272px;
+        }
+}
