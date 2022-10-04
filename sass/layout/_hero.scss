@@ -92,14 +92,23 @@ color:var(--primary--text-light-color);
         width:750px;
 
     }
+
     .hero__info{
     width: 738px;
-
-
+    &::after{
+        content:"";
+            width: 70%;
+            height: 810px;
+            background-color: #181823;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -10;
+         }
 }
 .hero__title{
     font-size: 78px;
     line-height: 1.2;
     color: var(--primary--text-light-color);
-}
-}
+
+}}

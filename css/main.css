@@ -254,19 +254,8 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .navigation::after {
-    content: "";
-    width: 70%;
-    height: 902px;
-    background-color: #181823;
-    position: absolute;
-    top: 0;
-    right: -30px;
-    z-index: -10;
-  }
   .header {
     width: 1200px;
-    position: relative;
   }
 }
 .hero {
@@ -363,6 +352,16 @@ body {
   }
   .hero__info {
     width: 738px;
+  }
+  .hero__info::after {
+    content: "";
+    width: 70%;
+    height: 810px;
+    background-color: #181823;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
   }
   .hero__title {
     font-size: 78px;
