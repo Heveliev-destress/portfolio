@@ -4,7 +4,7 @@
   --link-about-me-color:#181823;
   --link-about-me-border-color:#8491A0 ;
   --primary-background-color:#000000;
-  --header-logo-icon-color:#FFFFFF;
+  --logo-icon-color:#FFFFFF;
   --menu-open-icon-color:#C4C4C4;
   --primary--text-light-color:#FFFFFF;
   --primary-text-dark-color:#181823;
@@ -32,6 +32,10 @@
   --link-review-border-color:#8491A0 ;
   --review-border-color:#5B6876;
   --forn-input-color:#181823;
+  --footer-bcg-color:#181823;
+  --footer__icon-twitter:#26A7DE;
+  --footer__icon-dribble:#E94B88;
+  --footer__icon-linkedin:#0077B5;
 }
 
 h1,
@@ -208,7 +212,7 @@ body {
 .header__logo_icon {
   width: 78.43px;
   height: 24px;
-  fill: var(--header-logo-icon-color);
+  fill: var(--logo-icon-color);
 }
 
 @media screen and (min-width: 360px) {
@@ -1254,5 +1258,93 @@ body {
   }
   .form__box {
     width: 526px;
+  }
+}
+.footer {
+  background-color: var(--footer-bcg-color);
+}
+
+.footer__logo-icon {
+  width: 130.72px;
+  height: 40px;
+  fill: var(--logo-icon-color);
+}
+
+.footer__logo-social-box {
+  margin-bottom: 48px;
+}
+
+.footer__social-list {
+  margin-top: 32px;
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.footer__social-link {
+  padding: 0;
+  border: none;
+  line-height: 0;
+}
+
+.footer__icon-twitter {
+  fill: var(--footer__icon-twitter);
+  width: 24px;
+  height: 24px;
+}
+
+.footer__icon-dribble {
+  fill: var(--footer__icon-dribble);
+  width: 24px;
+  height: 24px;
+}
+
+.footer__icon-linkedin {
+  fill: var(--footer__icon-linkedin);
+  width: 24px;
+  height: 24px;
+}
+
+.footer__navigation-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary--text-light-color);
+}
+
+.footer__navigation-item {
+  width: 154px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__text {
+  margin-top: 48px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--page-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__logo-social-box {
+    margin-bottom: 0;
+  }
+  .footer__text {
+    width: 330px;
+  }
+  .footer__align {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__navigation-box {
+    margin-left: auto;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__text {
+    width: 1200px;
   }
 }/*# sourceMappingURL=main.css.map */
